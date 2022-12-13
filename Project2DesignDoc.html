@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<center><h1>Disaster Analysis Visualization Project</h1></center>
+<center><p>Apoorv Awasthi, Raj Zaveri, Sandeep Sirivuri, Nupur Singhal</p></center>
+<center><b>Indiana University-Purdue University, Indianapolis, IN 46202, USA</b></center>
+<center><p>aawasth@iu.edu, zaverir@iu.edu, svsirivu@iu.edu, nupsing@iu.edu</p></center>
+<br>
+<br>
+<h3>Introduction</h3>
+<p>Disasters of all sorts happen worldwide all the time. They can be of different groups such as natural, technological, or complex. There are many aspects to analyze about these disasters such as their groups, locations, and times. Therefore, we have found a dataset containing data about disasters that have occurred since 1912 and our goal with this project is to answer questions and discover patterns by analyzing and visualizing the data. Analyzing and visualizing this dataset will help in finding some patterns and correlations between disasters and its cause. This can help take steps in advance to prevent disasters.
+</p>
+<br>
+<br>
+<h3>Dataset Description</h3>
+<p>The dataset has been taken from the Emergency Events Dataset website (EM-DAT). The link to the website is https://public.emdat.be/.
+    The dataset has a list of disasters that happened all around the world from the year 1912. The dataset has many interesting attributes. Let us discuss these attributes one by one.
+    1. Year - Mentions the year of the disaster.
+    2. Disaster Group - Gives information about the disaster group, whether the disaster is Natural or technological.
+    3. Disaster Subgroup - Tells about the type of Natural or technological disaster.
+    4. Disaster Type - Mentions the type of disaster.
+    5. Disaster Subtype - Tells about the subtype of disaster.
+    6. Event Name - Name of the disaster event.
+    7. Country - The country in which the disaster happened.
+    8. Region - Region of the disaster.
+    9. Continent - The continent in which the disaster took place.
+    10. Origin - Place of origin of the disaster.
+    11. Total Deaths - Gives the total death count of the disaster.
+    12. No Injured - Gives the number of injured people caused by the disaster.
+    13. Total damage Adjusted - Gives the present value of the cost of damage caused by the disaster in USD. 
+</p>
+<br>
+<br>
+<h3>3) Design process and Question asked:</h3>
+<p>While viewing the dataset, we were curious about how the disasters happened throughout the course of time and where the disasters happened throughout the world. Immediately the first question came to our mind.</p>
+<p>
+<b>Question 1: How did the number of disasters change over time?</b>
+<br>
+<br>
+Answer: The number of disasters have increased over time. The disasters increased drastically from the year 1975 till early 2000s and have started to decline after that. 
+This trend in the number of disasters may be due to many reasons. One of the reasons can be the disaster group. This led to a subquestion.
+<br><br>
+<b>Q 1.1) How did the number of disasters change over time per Disaster group (Natural, Technological, Complex)?</b>
+<br><br>
+Answer: Natural disasters have increased till the year 2002 and then it remains somewhat constant after that year.  Technological disasters, on the other hand, increased till the year 2005 and then they started to decline. For complex disasters, there are only a few complex disasters that occurred during that time.
+<br><br>
+Both the disaster groups follow more or less the same trend. They increase and then decrease after the early 2000s. The low values in the early years may be due to non-reporting of many disasters. Another interesting find will be to understand the death variation throughout the years 
+<br><br>
+<b>Q 1.2) How did the number of deaths compare to the number of disasters over time for each Disaster group?</b>
+<br><br>
+Answer: For natural disasters, in the early years (from 1914 to 1970), there were spikes in the number of deaths despite the number of disasters being low. After 1970, the increase in the number of disasters did not result in an increase in the number of deaths. For technological disasters, the number of disasters correlates with the number of deaths. As technological disasters increase, the number of deaths also increases.
+<br><br>
+This shows how disasters and deaths correlate with technological disasters and not with natural disasters. Now, since we recognized how disasters and deaths have varied over time, this leads us to the second part of this question.
+<br><br>
+<b>Q 1.3) How did the number of disasters and deaths vary over time per country?</b>
+<br><br>
+Answer: Disasters and death vary for each country. China had the most number of disasters with 1955 disasters followed by India.
+<br><br>
+<b>Q 1.4) What were the months when most disasters started and ended?</b>
+<br><br>
+Answer: August is the month when most disasters started and ended. May is the second most disaster-prone month after August.
+Now, we got to know a lot of information about the disaster numbers. Now, to understand more, we need to focus on the disasters in more detail. This brings us to the next question. 
+<br><br>
+<b>Question 2: How did the number of disasters vary per Disaster type?</b>
+<br><br>
+<b>Q 2.1)  What were the most common disaster types overall?</b>
+<br><br>
+Answer: The most common types of disasters were by far Transport accidents, Floods, and Storms. Transport accidents made up 23.95% of the total disasters while Floods made up 22.37% and Storms made up 17.82%. Together they combined for more than half of the total disasters.
+<br><br>
+<b>Q 2.2) What were the most common disaster types per country?</b>
+<br><br>
+Answer: For most countries, transport accidents, floods, and storms made up a majority of the disasters with one or the other being larger or smaller than the overall percentage. For example, In the United States, storms were the most common at 47.73% followed by floods and then transport accidents at 13.87% and 13.05% respectively. In India, transport accidents made up most of the disasters at 34.43% followed by floods and storms at around 20% and 13% each. Then there were other countries where other disaster types surpassed the three most common ones. For example, in Australia, wildfires were more common than transport accidents. 
+<br><br>
+<b>Q 2.3)  For each disaster group, which countries suffered the most disasters?</b>
+<br><br>
+Answer: For complex disasters, there were a handful of countries that suffered just one each. These countries include Russia (Soviet Union), India, Bangladesh, Sudan, Togo, Yemen, Nicaragua, Panama, the Central African Republic, Burundi, Armenia, Cambodia, North Korea, and Comoros. Nearly all countries suffered natural disasters, but the countries with the most include the United States at 1,106, China at 986, India at 755 and Indonesia at 597. Those four countries also had the most technological disasters joined by Russia and Pakistan not too far behind. However, in technological disasters, China and India surpassed the United States.
+<br><br>
+<b>Q 2.4)  What was the makeup of disaster types per region?</b>
+<br><br>
+Answer: A common theme was that floods, storms, and transport accidents were common in most regions. In Micronesia, storms made up 56.25% of the disasters and in Northern Africa, 52.13% of the disasters were transport accidents. Many of the natural disasters were more common in certain regions most likely due to the climates of those regions. For example, there was an increase in wildfires in Australia and storms in regions such as Micronesia and the Caribbean. 
+Further, we want to explore the share of different disaster types in landlocked countries compared to coastline countries. This brings us to the next set of questions.
+<br><br>
+<b>Q 3.1) Is the percentage of floods compared to other disaster types more in landlocked countries or in coastline countries</b>
+<br><br>
+Answer: From our visualization, we found that the share of a flood-type disaster compared to other disaster types is higher in landlocked countries than in coastline countries. 
+<br><br>
+<b>Q 3.2) Is the percentage of storms compared to other disaster types more in coastline countries than in landlocked countries</b>
+<br><br>
+Answer: The percentage of Storm occurrence compared to other disaster types is more in coastline countries than in landlocked countries as cyclones and hurricanes generally develop over oceanic regions and then move towards the land surface.
+<br><br>
+<b>Q 3.3) Is the percentage of earthquakes compared to other disaster types higher in coastline countries than in landlocked countries?</b>
+<br><br>
+Answer: The occurrence of <br>earthquakes compared to other disaster types has a higher percentage in coastline countries than in landlocked countries.
+<br><br>
+<b>Q 3.4) Does the percentage of drought compared to other disaster types occur more in landlocked than in coastline countries</b>
+<br><br>
+It is interesting to note that the occurrence of droughts compared to other disaster types is  more in landlocked countries than in coastline countries as there might be a relation between access to water bodies and the occurrence of droughts.
+As we have covered mostly the number of disasters, the next set of questions covers the cost of damages these disasters have caused.
+<br><br>
+<b>Question 4: To analyze which disaster caused maximum damage, in which year range, the country where maximum damage happened, and the reason for the damage. </b>
+<br><br>
+<b>Q 4.1) Which Disaster caused maximum Damage? </b> 
+<br><br>
+Answer: Total cost of Damage by Disaster Type: It represents overall damages in US$, damages based on Disaster type. For example, by clicking on the Flood pie, we can see that the maximum damage caused due to the Flood is $1,472,308K. And overall Damages is $6,086,002K.
+<br><br>
+<b>Q 4.2) During which year the maximum damage took place</b>
+<br><br>
+Answer: Total cost of Damage by disaster Type per year: It represents the cost of damage per disaster type categorized into different year buckets. For example, we can see that damage due to floods in 2010-2016 was the maximum. 
+<br><br>
+<b>Q 4.3) Which country suffered maximum damage due to floods during 2010-2016?</b>
+<br><br>
+Answer: (Years Bucket) Analysis of Disaster – (Disaster Type) by Country: On click of the 2010-2016 bar chart, chart 3 would be filtered down to show the Disaster type and time. So, when 2010-2016 and flood are selected, the header would change to 2010-2016 Analysis of Disaster – Flood by Country. For example, in the case of flood, this tells us China faced the maximum impact of Flood during 2010-2016 in terms of Damages. 
+<br><br>
+<b>Q 4.4) What is the reason for the flood in China that took place during 2010-2016?</b>
+<br><br>
+Answer: (Years buckets) Data to show the origin of Disaster - (Disaster Type) by Country - (Country): ) 2010-2016 Data to show the origin of Disaster - Flood by Country - China: This graph represents the reason for Damages in China sorted based on the cost of the damages. For example, we can infer from the visualization that Maximum Damage happened in China during 2010-2016 due to rains.
+</p>
+<br><br>
+<h3>Conclusion</h3>
+<p>We learned plenty of things regarding various attributes of global disasters through this analysis. We learned about how the number of disasters varied over the years. We also discovered how disasters differed between landlocked and coastal countries as well as what the damage costs were based on different factors. We went into the analysis with a few assumptions. First, we hypothesized that coastal countries would have more natural disasters, mainly storms, earthquakes, and droughts. This turned out to be true in two out of the three cases (storms, and earthquakes), but there was a higher occurrence of droughts in landlocked countries. Through analysis, we also discovered that most of the global disasters occurred in more populous countries including China, India, and the United States and that some of the most common disaster types were storms, floods, and transport accidents. We were also able to visualize how the number of disasters and the number of deaths increased over time. Overall, we gained insightful knowledge about global disasters regarding time, damage cost, and disaster types. 
+</p>
+
+</html>
